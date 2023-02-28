@@ -7,13 +7,12 @@
       "name": "design_wrapper",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2022.2",
-      "validated": "true"
+      "tool_version": "2022.2"
     },
     "design_tree": {
       "processing_system7_0": "",
-      "imginfile_0": "",
-      "xlconcat_0": ""
+      "xlconcat_0": "",
+      "imginfile_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1754,6 +1753,12 @@
           }
         }
       },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "design_wrapper_xlconcat_0_0",
+        "xci_path": "ip/design_wrapper_xlconcat_0_0/design_wrapper_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0"
+      },
       "imginfile_0": {
         "vlnv": "xilinx.com:module_ref:imginfile:1.0",
         "xci_name": "design_wrapper_imginfile_0_0",
@@ -1772,12 +1777,6 @@
             "direction": "O"
           }
         }
-      },
-      "xlconcat_0": {
-        "vlnv": "xilinx.com:ip:xlconcat:2.1",
-        "xci_name": "design_wrapper_xlconcat_0_0",
-        "xci_path": "ip/design_wrapper_xlconcat_0_0/design_wrapper_xlconcat_0_0.xci",
-        "inst_hier_path": "xlconcat_0"
       }
     },
     "interface_nets": {

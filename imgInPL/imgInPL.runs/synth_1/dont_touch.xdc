@@ -9,10 +9,8 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_wrap
 # IP: bd/design_wrapper/ip/design_wrapper_processing_system7_0_0/design_wrapper_processing_system7_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_wrapper_processing_system7_0_0 || ORIG_REF_NAME==design_wrapper_processing_system7_0_0} -quiet] -quiet
 
-# IP: bd/design_wrapper/ip/design_wrapper_imginfile_0_0/design_wrapper_imginfile_0_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_wrapper_imginfile_0_0 || ORIG_REF_NAME==design_wrapper_imginfile_0_0} -quiet] -quiet
-
 # IP: bd/design_wrapper/ip/design_wrapper_xlconcat_0_0/design_wrapper_xlconcat_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_wrapper_xlconcat_0_0 || ORIG_REF_NAME==design_wrapper_xlconcat_0_0} -quiet] -quiet
 
-# XDC: /home/bchedote/Documents/innovR-arch-test/imgInPL/imgInPL.gen/sources_1/bd/design_wrapper/design_wrapper_ooc.xdc
+# IP: bd/design_wrapper/ip/design_wrapper_imginfile_0_0/design_wrapper_imginfile_0_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_wrapper_imginfile_0_0 || ORIG_REF_NAME==design_wrapper_imginfile_0_0} -quiet] -quiet

@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/user/imgInPL/imgInPL.runs/design_wrapper_imginfile_0_0_synth_1'
+HD_PWD='/home/bchedote/Documents/innovR-arch-test/imgInPL/imgInPL.runs/design_wrapper_imginfile_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

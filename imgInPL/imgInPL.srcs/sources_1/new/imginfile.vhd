@@ -18,7 +18,7 @@ entity imginfile is
 end imginfile;
 
 architecture Behavioral of imginfile is
-    constant clock_frequency_c : integer := 100e6; -- 100MHz
+    constant clock_frequency_c : integer := 10e3; -- 1kHz
     constant clock_period_c : time := 1000ms / clock_frequency_c;
     
     signal clk : std_logic := '1';   
@@ -29,29 +29,33 @@ architecture Behavioral of imginfile is
     send : process(clk) is -- sending 
     variable n_line : integer := 0;
     variable n_pixel : integer := 0;
+    variable start : integer := 0;
+    begin  
     
-    begin   
-        
-        data_valid <= '1';
-        
-        pixel <= img_c(n_line)(n_pixel); -- For our experiment, 
-                                         -- we need to place this register 
-                                         -- somewhere far from img_c. 
-                                                                    
-        if (n_pixel < (img_width_c-1)) then -- move cursor on the line
-            n_pixel := (n_pixel + 1);
-        else
-            n_pixel := 0;
-        end if;
+        if (start = 1) then
+            data_valid <= '1';
+            pixel <= img_c(n_line)(n_pixel); -- For our experiment, 
+                                             -- we need to place this register 
+                                             -- somewhere far from img_c. 
+                                                                        
+            if (n_pixel < (img_width_c-1)) then -- move cursor on the line
+                n_pixel := (n_pixel + 1);
+            else
+                n_pixel := 0;
+            end if;
+                
+            if(n_pixel = 0) then -- new line 
+                n_line := (n_line + 1);
+            end if;
             
-        if(n_pixel = 0) then -- new line 
-            n_line := (n_line + 1);
-        end if;
-        
-        if(n_line = img_height_c) then -- reset img cursor
-            n_line := 0;
-        end if;
-        
+            if(n_line = img_height_c) then -- reset img cursor
+                n_line := 0;
+                data_valid <= '0';
+                start := 0;    
+            end if;
+        else 
+            start := 1;
+        end if; 
     end process;
     
 end Behavioral;

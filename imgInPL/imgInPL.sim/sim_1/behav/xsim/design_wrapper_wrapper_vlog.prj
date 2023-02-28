@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog axi_infrastructure_v1_1_0  --include "../../../../imgInPL.gen/sources_1/bd/design_wrapper/ipshared/ec67/hdl" --include "../../../../imgInPL.gen/sources_1/bd/design_wrapper/ipshared/ee60/hdl" --include "/tools/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../imgInPL.gen/sources_1/bd/design_wrapper/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v" \
+
+sv axi_vip_v1_1_13  --include "../../../../imgInPL.gen/sources_1/bd/design_wrapper/ipshared/ec67/hdl" --include "../../../../imgInPL.gen/sources_1/bd/design_wrapper/ipshared/ee60/hdl" --include "/tools/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../imgInPL.gen/sources_1/bd/design_wrapper/ipshared/ffc2/hdl/axi_vip_v1_1_vl_rfs.sv" \
+
+sv processing_system7_vip_v1_0_15  --include "../../../../imgInPL.gen/sources_1/bd/design_wrapper/ipshared/ec67/hdl" --include "../../../../imgInPL.gen/sources_1/bd/design_wrapper/ipshared/ee60/hdl" --include "/tools/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../imgInPL.gen/sources_1/bd/design_wrapper/ipshared/ee60/hdl/processing_system7_vip_v1_0_vl_rfs.sv" \
+
+verilog xil_defaultlib  --include "../../../../imgInPL.gen/sources_1/bd/design_wrapper/ipshared/ec67/hdl" --include "../../../../imgInPL.gen/sources_1/bd/design_wrapper/ipshared/ee60/hdl" --include "/tools/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../imgInPL.ip_user_files/bd/design_wrapper/ip/design_wrapper_processing_system7_0_0/sim/design_wrapper_processing_system7_0_0.v" \
+"../../../../imgInPL.ip_user_files/bd/design_wrapper/ip/design_wrapper_xlconcat_0_0/sim/design_wrapper_xlconcat_0_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -70,7 +70,12 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param project.hsv.suppressChildGraphs 0
 set_param chipscope.maxJobs 4
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-9082-pc-eii144/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
 
@@ -89,7 +94,6 @@ OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib /home/bchedote/Documents/innovR-arch-test/imgInPL/imgInPL.gen/sources_1/bd/design_wrapper/hdl/design_wrapper_wrapper.vhd
 add_files /home/bchedote/Documents/innovR-arch-test/imgInPL/imgInPL.srcs/sources_1/bd/design_wrapper/design_wrapper.bd
 set_property used_in_implementation false [get_files -all /home/bchedote/Documents/innovR-arch-test/imgInPL/imgInPL.gen/sources_1/bd/design_wrapper/ip/design_wrapper_processing_system7_0_0/design_wrapper_processing_system7_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/bchedote/Documents/innovR-arch-test/imgInPL/imgInPL.gen/sources_1/bd/design_wrapper/design_wrapper_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

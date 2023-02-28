@@ -1,3 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/user/imgInPL/imgInPL.srcs/sources_1/new/img_pkg.vhd" into library xil_defaultlib
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/user/imgInPL/imgInPL.srcs/sources_1/new/imginfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/bchedote/Documents/innovR-arch-test/imgInPL/imgInPL.srcs/sources_1/new/imginfile.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'imginfile'
