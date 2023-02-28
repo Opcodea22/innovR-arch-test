@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado" Owner="user" Host="user-HP-EliteBook-840-G2" Pid="9054" HostCore="4" HostMemory="8011412">
+    <Process Command="vivado" Owner="bchedote" Host="pc-eii144" Pid="29807" HostCore="16" HostMemory="65529384">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="bchedote" Host="pc-eii144" Pid="32001" HostCore="16" HostMemory="65529384">
     </Process>
 </ProcessHandle>
