@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../imgInPL.srcs/sources_1/new/img_pkg.vhd" \
+"../../../../imgInPL.srcs/sources_1/new/imginfile.vhd" \
+
+# Do not sort compile order
+nosort
