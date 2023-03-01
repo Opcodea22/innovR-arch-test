@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../imgInPL.srcs/sources_1/new/img_pkg.vhd" \
+"../../../../imgInPL.srcs/sources_1/new/imginfile.vhd" \
+"../../../../imgInPL.ip_user_files/bd/design_1/ip/design_1_imginfile_0_0/sim/design_1_imginfile_0_0.vhd" \
+"../../../../imgInPL.ip_user_files/bd/design_1/sim/design_1.vhd" \
+"../../../../imgInPL.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../imgInPL.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../imgInPL.gen/sources_1/bd/design_1/ipshared/ee60/hdl" --include "/tools/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"../../../../imgInPL.ip_user_files/bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../../imgInPL.ip_user_files/bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

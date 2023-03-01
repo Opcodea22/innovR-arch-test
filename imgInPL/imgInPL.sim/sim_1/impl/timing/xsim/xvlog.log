@@ -1,0 +1,9 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/bchedote/Documents/innovR-arch-test/imgInPL/imgInPL.sim/sim_1/impl/timing/xsim/design_1_wrapper_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module design_1
+INFO: [VRFC 10-311] analyzing module design_1_imginfile_0_0
+INFO: [VRFC 10-311] analyzing module design_1_imginfile_0_0_imginfile
+INFO: [VRFC 10-311] analyzing module design_1_processing_system7_0_0
+INFO: [VRFC 10-311] analyzing module design_1_processing_system7_0_0_processing_system7_v5_5_processing_system7
+INFO: [VRFC 10-311] analyzing module design_1_wrapper
+INFO: [VRFC 10-311] analyzing module design_1_xlconcat_0_0
+INFO: [VRFC 10-311] analyzing module glbl

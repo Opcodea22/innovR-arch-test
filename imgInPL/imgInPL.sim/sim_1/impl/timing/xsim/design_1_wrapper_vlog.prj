@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../imgInPL.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../../imgInPL.gen/sources_1/bd/design_1/ipshared/ee60/hdl" --include "/tools/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
+"design_1_wrapper_time_impl.v" \
+
+# Do not sort compile order
+nosort
